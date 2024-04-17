@@ -1,0 +1,274 @@
+html{
+    scroll-behavior: smooth;
+}
+header{
+width: 100%;
+height: 80px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 0 100px;
+background: greenyellow;
+}
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-image: url(./img/farfalle-768x512.webp);
+    background-position: center;
+    background-size: cover;
+}
+.logo{
+    font-size: 28px;
+    font-weight: bold;
+    color: green;
+    margin-right: 40px;
+}
+.nav-bar ul{
+    display: flex;
+    list-style: none;
+}
+.nav-bar ul li a{
+    display: block;
+    color: green;
+    font-size: 20px;
+    padding: 8px 25px;
+    transition: .2s;
+    margin: 0 5px;
+    text-decoration: none;
+}
+.nav-bar ul li:hover a{
+    background-color: darkseagreen;
+    color: #213032;
+    cursor: pointer;
+}
+.content{
+    position: absolute;
+    top: 40%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+h1{
+    color: green;
+    font-size: 75px;
+    margin: 20px 0px 20px;
+}
+h3{
+    color: greenyellow;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+h4{
+    color: greenyellow;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+.button{
+    position: absolute;
+    background-color: #213032;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid black;
+    font-weight: bold;
+    padding: 13px 30px;
+    transform: .4s;
+}
+.button:hover{
+    background-color: #97a2a3;
+    color: #213032;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.about{
+    width: 100%;
+    padding: 10px 0px;
+    background-color: #314e52;
+}
+
+.main{
+    width: 1130px;
+    max-width: 65%;
+    margin: 10px;
+    display: flex;
+    align-items: last baseline;
+    justify-content: space-between;
+}
+.about h2{
+    color:#edffef;
+    font-size: 30px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    text-align: left;
+    padding-left: 10px;
+}
+.about-text p{
+    color: #97a2a3;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom:5px;
+}
+.about-text{
+    width: 50px;
+}
+
+ /*Categories*/
+ .categories{
+    width: 100%;
+    padding: 10px 0px;
+    background-color: #314e52;
+ }
+ .categories h2{
+    color:#edffef;
+    font-size: 45px;
+    text-transform: capitalize;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    text-align: center;
+ }
+ .ca-card{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    border: 5px solid #ccc;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    overflow: hidden;
+ }
+ .box .ca-card .content{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    padding: 15px;
+    background-color: #edffef;
+    color: #182f32;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+ }
+ .box .ca-card:hover .content{
+    opacity: 1;
+ }
+ .ca-card h3{
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #213032;
+ }
+.box .ca-card p{
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.box .ca-card button{
+    position:relative;
+    background-color: #213032;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid black;
+    font-weight: bold;
+    transform:.4s;
+    padding: 13px 30px;
+}
+.box .ca-card button:hover{
+    background-color: #97a2a3;
+    color: #213032;
+    border: 2px solid black;
+    cursor: pointer;
+}
+.box .ca-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+/*Contact form*/
+.contact{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:left;
+    padding: 5px;
+    background:lightgreen ;
+    margin-right: 0px;
+}
+.contact-info .contact-form{
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+    text-align: left;
+    color: black;
+    font-size: 15px;
+}
+.contact-info h1 .contact-form h1{
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #edffef;
+}
+.contact-form form{
+    text-align: center;
+}
+
+.contact-form label .contact-form input .contact-form textarea .contact-form button
+{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.contact-form button{
+    background-color:gray ;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid black;
+    font-weight: bold;
+    transform:.4s;
+    padding: 10px 0px;
+}
+.contact-form button:hover{
+    background-color: #97a2a3;
+    color: #213032;
+    border: 2px solid black;
+    cursor: pointer;
+}
+.contact-form label{
+    text-align: left;
+    color: #edffef;
+}
+.contact-form input .contact-form textarea{
+    padding: 8px;
+}
+.contact-info p{
+    padding: 15px;
+}
+
+    .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+    }
+    .fa:hover {
+        opacity: 0.7;
+    }
+    .fa-facebook {
+        background: #3B5998;
+        color: white;
+    }
+    .fa-twitter {
+        background: #55ACEE;
+        color:white;
+    }
+
+    footer{
+    padding: 20px 0;
+    background: #182f32;
+    }
+    footer h5{
+    font-size: 25px;
+    margin-top: 10px;
+    text-align: center;
+    color: lawngreen;
+}
